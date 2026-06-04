@@ -1,11 +1,12 @@
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8 0 9.6rem 0;
 }
 
 .hero {
   max-width: 130rem;
   display: grid;
+  padding: 0 3.2rem;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
@@ -16,15 +17,6 @@
   width: 100%;
 }
 
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
@@ -32,45 +24,6 @@
 }
 
 /* hero buttons */
-.btn:link,
-.btn:visited {
-  font-size: 2rem;
-  font-weight: 600;
-  color: white;
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  border-radius: 15px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-
-.btn--full:visited,
-.btn--full:link {
-  background-color: #e67e22;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-}
-
-.btn--outline:visited,
-.btn--outline:link {
-  background-color: white;
-  color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-  /* to add border inside  */
-  box-shadow: inset 0 0 0 3px white;
-}
-
-.margin--right-sm {
-  margin-right: 1.6rem !important;
-}
 
 /* delovered meals */
 .delivered-meals {
