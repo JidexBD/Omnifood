@@ -71,6 +71,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  scroll-behavior: smooth;
 }
 
 /* general reusale components */
@@ -135,6 +136,7 @@ strong {
   border-radius: 9px;
   border: none;
   font-family: inherit;
+  color: white;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -210,6 +212,9 @@ strong {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
