@@ -14,6 +14,34 @@ btnNavEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
 
+// our sticky naigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    // to remove it
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // in the view port
+    root: null,
+    // when the hero section is out of the view port
+    threshold: 0,
+    rootMargin: "-80px",
+  },
+);
+
+obs.observe(sectionHeroEl);
+
 // smooth scrolling for ad all browsers and safari with js
 
 const allLinks = document.querySelectorAll("a:link");
